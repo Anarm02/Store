@@ -7,6 +7,8 @@ import AboutPage from "../../Features/about/AboutPage";
 import ContactPage from "../../Features/contact/ContactPage";
 import ServerError from "../Errors/ServerError";
 import NotFound from "../Errors/NotFound";
+import BasketPage from "../../Features/Basket/BasketPage";
+import CheckoutPage from "../../Features/Checkout/CheckoutPage";
 
 export const router = createBrowserRouter([
   {
@@ -20,6 +22,8 @@ export const router = createBrowserRouter([
       { path: "contact", element: <ContactPage /> },
       { path: "server-error", element: <ServerError /> },
       { path: "not-found", element: <NotFound /> },
+      { path: "basket", element: <BasketPage /> },
+      { path: "checkout", element: <CheckoutPage /> },
       { path: "*", element: <Navigate replace to="/not-found" /> },
     ],
   },
